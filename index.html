@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div style="color:blue">
+        <form action="/predict" method="POST">
+            <h2>Predictive analysis</h2>
+            <h3>Bedrooms(in between 0 to 30)</h3><br><input id="first" name="Bedrooms" required="required">
+            <h3>Bathrooms(in between 0 to 8)</h3><br><input id="second" name="Bathrooms" required="required">
+            <h3>Sqft_living(in between 300 to 14000)</h3><br><input id="third" name="Sqft_living" required="required">
+            <h3>Sqft_lot(in between 500 to 1700000)</h3><br><input id="fourth" name="Sqft_lot" required="required">
+            <h3>Floors(minimum 1)</h3><br><input id="fifth" name="Floors" required="required">
+            <h3>Grade(in between 1 to 10)</h3><br><input id="sixth" name="Grade" required="required">
+            <h3>Sqft_basement(in between 0 to 5000)</h3><br><input id="seventh" name="Sqft_basement" required="required">
+            <h3>Number of Years(in between 5 to 120)</h3><br><input id="eighth" name="Number of Years" required="required">
+             <br><br><button id="sub" type="submit ">Calculate the house Price</button>
+            <br>
+
+
+
+
+        </form>
+
+
+
+        <br><br><h3>{{ prediction_text }}</h3>
+    </div>
+ <style>
+        body {
+            background-color: lightslategray;
+            text-align: center;
+            padding: 0px;
+        }
+
+        #box {
+            border-radius: 60px;
+            border-color: 45px;
+            border-style: solid;
+            font-family: cursive;
+            text-align: center;
+            background-color: rgb(168, 131, 61);
+            font-size: medium;
+            position: absolute;
+            width: 700px;
+            bottom: 9%;
+            height: 850px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 14px;
+        }
+
+        #first {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #second {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #third {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #fourth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #fifth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #sixth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #seventh {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #eighth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+    </style>
+</body>
+
+</html>
